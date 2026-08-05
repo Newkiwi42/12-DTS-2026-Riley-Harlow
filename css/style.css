@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #1a1a1a;
+  background: #f5f2eb;
+}
+
+.site-header {
+  background: #1c2a1f;
+  color: #f5f2eb;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+}
+
+.nav-brand {
+  color: #f5f2eb;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #c8d0c4;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #f5f2eb;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem;
+}
+
+main h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+main p {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  color: #444;
+}
