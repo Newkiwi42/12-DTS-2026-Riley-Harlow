@@ -1,3 +1,12 @@
+:root {
+  --green: #61e45a;
+  --purple: #9c29ab;
+  --cream: #fffcef;
+  --ink: #030009;
+  --plum: #5e1268;
+  --mint: #e4f9e2;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,48 +14,57 @@
 }
 
 body {
-  font-family: Georgia, "Times New Roman", serif;
-  color: #1a1a1a;
-  background: #f5f2eb;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--cream);
 }
 
+/* Nav sits on the logo's own green so the image blends in */
 .site-header {
-  background: #1c2a1f;
-  color: #f5f2eb;
+  background: var(--green);
+  border-bottom: 3px solid var(--ink);
 }
 
 .nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   max-width: 960px;
   margin: 0 auto;
-  padding: 1rem 1.25rem;
+  padding: 0.75rem 1.25rem;
 }
 
-.nav-brand {
-  color: #f5f2eb;
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: bold;
-  letter-spacing: 0.02em;
+.nav-brand img {
+  display: block;
+  height: 64px;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: 0.5rem;
 }
 
 .nav-links a {
-  color: #c8d0c4;
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  color: var(--ink);
   text-decoration: none;
   font-size: 0.95rem;
+  font-weight: 600;
 }
 
-.nav-links a:hover,
+.nav-links a:hover {
+  background: var(--cream);
+}
+
 .nav-links a.active {
-  color: #f5f2eb;
+  background: var(--purple);
+  color: var(--cream);
 }
 
 main {
@@ -55,12 +73,11 @@ main {
   padding: 2.5rem 1.25rem;
 }
 
-main h1 {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
+h1 {
+  font-size: 2.25rem;
 }
 
 main p {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  margin-top: 0.5rem;
   color: #444;
 }
