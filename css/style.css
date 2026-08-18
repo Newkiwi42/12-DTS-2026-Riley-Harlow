@@ -19,7 +19,6 @@ body {
   background: var(--cream);
 }
 
-/* Nav sits on the logo's own green so the image blends in */
 .site-header {
   background: var(--green);
   border-bottom: 3px solid var(--ink);
