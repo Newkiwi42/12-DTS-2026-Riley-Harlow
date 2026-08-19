@@ -80,3 +80,31 @@ main p {
   margin-top: 0.5rem;
   color: #444;
 }
+
+.site-footer {
+  background: var(--green);
+  border-top: 3px solid var(--ink);
+  padding: 1rem 1.25rem;
+  text-align: center;
+  color: var(--ink);
+}
+
+.site-footer p + p {
+  margin-top: 0.5rem;
+}
+
+.site-footer a {
+  display: inline-block;
+  padding: 0.4rem 0.75rem;
+  margin: 0.2rem;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.site-footer a:hover {
+  background: var(--cream);
+}
