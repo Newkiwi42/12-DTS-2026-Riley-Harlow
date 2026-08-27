@@ -87,8 +87,6 @@ h1 { font-size: 2.25rem; }
 
 h2 { font-size: 1.25rem; }
 
-main h2 { margin: 2rem 0 0.75rem; }
-
 main p {
   margin-top: 0.5rem;
   color: #444;
@@ -97,37 +95,85 @@ main p {
 
 .btn { margin-right: 0.5rem; }
 
-.hero-img,
-.photos img {
+/* Home */
+.hero img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
   border: 2px solid var(--ink);
   border-radius: 8px;
-  object-fit: cover;
+  display: block;
 }
 
-.hero-img {
-  width: 100%;
-  height: 260px;
-  margin-bottom: 1.5rem;
+.hero-box {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  background: #e4f9e2;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
 }
 
-.photos {
+.hero-btns { margin-top: 1rem; }
+
+.block { margin-top: 2rem; }
+
+.block h2 { margin-bottom: 0.75rem; }
+
+.row {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
-.photos figure { flex: 1; min-width: 140px; }
+.card {
+  flex: 1;
+  min-width: 140px;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
 
-.photos img {
+.card img {
   width: 100%;
   height: 140px;
+  object-fit: cover;
   display: block;
 }
 
-.photos figcaption {
-  margin-top: 0.35rem;
-  font-size: 0.9rem;
+.card p {
+  padding: 0.5rem 0.75rem;
+  font-weight: 600;
+}
+
+.link-row { margin-top: 1rem; }
+
+.steps {
+  padding-left: 1.25rem;
   color: #444;
+  line-height: 1.8;
+}
+
+.cta {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+  background: var(--purple);
+  color: var(--cream);
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+}
+
+.cta h2 { color: var(--cream); }
+
+.cta p {
+  color: var(--cream);
+  margin-top: 0.5rem;
+}
+
+.cta .btn {
+  margin-top: 1rem;
+  background: var(--green);
 }
 
 .site-footer p + p { margin-top: 0.5rem; }

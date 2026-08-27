@@ -22,31 +22,55 @@
   </header>
 
   <main>
-    <img class="hero-img" src="images/hero-car.jpg" alt="Cars available to rent">
+    <section class="hero">
+      <img src="images/hero-car.jpg" alt="Cars available to rent">
+      <div class="hero-box">
+        <h1>Super fast car rentals</h1>
+        <p>Pick a car, book it in a minute, drive away the same day.</p>
+        <p class="hero-btns">
+          <a class="btn btn-primary" href="book.html">Book now</a>
+          <a class="btn" href="fleet.html">View fleet</a>
+        </p>
+      </div>
+    </section>
 
-    <h1>Super fast car rentals</h1>
-    <p>Pick a car, book it in a minute, drive away the same day.</p>
-    <p>I rent cars, vans and utes for trips and jobs around town.</p>
-    <p>
-      <a class="btn btn-primary" href="book.html">Book now</a>
-      <a class="btn" href="fleet.html">View fleet</a>
-    </p>
+    <section class="block">
+      <p>I rent cars, vans and utes for trips and jobs around town. Browse the fleet, send a booking request online, and pick up when you're ready.</p>
+    </section>
 
-    <h2>Some of our vehicles</h2>
-    <div class="photos">
-      <figure>
-        <img src="images/car-small.jpg" alt="Small hatchback car">
-        <figcaption>Small cars</figcaption>
-      </figure>
-      <figure>
-        <img src="images/car-suv.jpg" alt="SUV on the road">
-        <figcaption>SUVs</figcaption>
-      </figure>
-      <figure>
-        <img src="images/car-ute.jpg" alt="Large utility vehicle">
-        <figcaption>Vans &amp; utes</figcaption>
-      </figure>
-    </div>
+    <section class="block">
+      <h2>Some of our vehicles</h2>
+      <div class="row">
+        <div class="card">
+          <img src="images/car-small.jpg" alt="Small hatchback">
+          <p>Small cars</p>
+        </div>
+        <div class="card">
+          <img src="images/car-suv.jpg" alt="SUV">
+          <p>SUVs</p>
+        </div>
+        <div class="card">
+          <img src="images/car-ute.jpg" alt="Ute">
+          <p>Vans &amp; utes</p>
+        </div>
+      </div>
+      <p class="link-row"><a class="btn" href="fleet.html">See full fleet</a></p>
+    </section>
+
+    <section class="block">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><strong>1.</strong> Choose a vehicle from the fleet</li>
+        <li><strong>2.</strong> Fill in the booking form online</li>
+        <li><strong>3.</strong> Pick up and drive away</li>
+      </ol>
+    </section>
+
+    <section class="cta">
+      <h2>Ready to book?</h2>
+      <p>Send a request in a few minutes — no phone tag required.</p>
+      <a class="btn" href="book.html">Book now</a>
+    </section>
   </main>
 
   <footer class="site-footer">
