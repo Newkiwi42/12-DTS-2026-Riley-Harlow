@@ -75,7 +75,12 @@ main { padding: 2.5rem 1.25rem; }
 }
 
 .nav-links a:hover,
-.site-footer a:hover { background: var(--cream); }
+.site-footer a:hover,
+.btn:hover,
+.cta .btn:hover {
+  background: #fff;
+  color: var(--ink);
+}
 
 .nav-links a.active,
 .btn-primary {
@@ -125,13 +130,21 @@ main p {
   flex-wrap: wrap;
 }
 
-.card {
+a.card {
   flex: 1;
   min-width: 140px;
+  display: block;
   border: 2px solid var(--ink);
   border-radius: 8px;
   overflow: hidden;
   background: #fff;
+  color: inherit;
+  text-decoration: none;
+}
+
+a.card:hover {
+  background: #fff;
+  outline: 3px solid var(--purple);
 }
 
 .card img {
