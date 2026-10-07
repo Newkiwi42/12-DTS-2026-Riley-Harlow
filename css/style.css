@@ -221,4 +221,22 @@ a.card:hover {
   background: var(--green);
 }
 
+.fleet-cat {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border: 2px solid var(--ink);
+  border-radius: 8px;
+  background: #fff;
+  scroll-margin-top: 1rem;
+}
+
+.fleet-cat:target { outline: 3px solid var(--purple); }
+
+.fleet-cat ul {
+  margin: 0.75rem 0 1rem;
+  padding-left: 1.25rem;
+  color: #444;
+  line-height: 1.7;
+}
+
 .site-footer p + p { margin-top: 0.5rem; }
