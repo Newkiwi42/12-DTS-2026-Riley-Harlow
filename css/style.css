@@ -135,7 +135,14 @@ main p {
   justify-content: center;
 }
 
-.hero-btns { margin-top: 1rem; }
+.hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.hero-btns .btn { margin-right: 0; }
 
 .block { margin-top: 2rem; }
 
