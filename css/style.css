@@ -221,8 +221,16 @@ a.card:hover {
   background: var(--green);
 }
 
-.fleet-cat {
+.fleet-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-top: 1.5rem;
+}
+
+.fleet-cat {
+  flex: 1 1 calc(50% - 1rem);
+  min-width: 260px;
   padding: 1.25rem;
   border: 2px solid var(--ink);
   border-radius: 8px;
