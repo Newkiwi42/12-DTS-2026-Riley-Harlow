@@ -36,14 +36,86 @@
         <input type="date" name="pickup">
       </label>
       <label>Drop off date
-        <input type="text" name="dropoff" placeholder="type a date">
+        <input type="date" name="dropoff">
       </label>
-      <label>Vehicle
-        <select name="vehicle">
-          <option>Small car — $45/day</option>
-          <option>Van or ute — $85/day</option>
-        </select>
-      </label>
+
+      <h2>Pick a car</h2>
+
+      <h2>Small cars</h2>
+      <div class="pick-row">
+        <label class="pick">
+          <input type="radio" name="vehicle" value="Toyota Corolla" required>
+          <img src="images/cars/corolla.jpg" alt="Toyota Corolla">
+          <span>Toyota Corolla<br>$45/day</span>
+        </label>
+        <label class="pick">
+          <input type="radio" name="vehicle" value="Mazda 3">
+          <img src="images/cars/mazda3.jpg" alt="Mazda 3">
+          <span>Mazda 3<br>$55/day</span>
+        </label>
+        <label class="pick">
+          <input type="radio" name="vehicle" value="Suzuki Swift">
+          <img src="images/cars/swift.jpg" alt="Suzuki Swift">
+          <span>Suzuki Swift<br>$45/day</span>
+        </label>
+      </div>
+
+      <h2>SUVs</h2>
+      <div class="pick-row">
+        <label class="pick">
+          <input type="radio" name="vehicle" value="Toyota RAV4">
+          <img src="images/cars/rav4.jpg" alt="Toyota RAV4">
+          <span>Toyota RAV4<br>$75/day</span>
+        </label>
+        <label class="pick">
+          <input type="radio" name="vehicle" value="Mazda CX-5">
+          <img src="images/cars/cx5.jpg" alt="Mazda CX-5">
+          <span>Mazda CX-5<br>$80/day</span>
+        </label>
+        <label class="pick">
+          <input type="radio" name="vehicle" value="Kia Sportage">
+          <img src="images/cars/sportage.jpg" alt="Kia Sportage">
+          <span>Kia Sportage<br>$75/day</span>
+        </label>
+      </div>
+
+      <h2>Vans and utes</h2>
+      <div class="pick-row">
+        <label class="pick">
+          <input type="radio" name="vehicle" value="Ford Ranger">
+          <img src="images/cars/ranger.jpg" alt="Ford Ranger">
+          <span>Ford Ranger<br>$85/day</span>
+        </label>
+        <label class="pick">
+          <input type="radio" name="vehicle" value="Toyota Hilux">
+          <img src="images/cars/hilux.jpg" alt="Toyota Hilux">
+          <span>Toyota Hilux<br>$90/day</span>
+        </label>
+        <label class="pick">
+          <input type="radio" name="vehicle" value="Toyota HiAce">
+          <img src="images/cars/hiace.jpg" alt="Toyota HiAce">
+          <span>Toyota HiAce<br>$95/day</span>
+        </label>
+      </div>
+
+      <h2>Luxury</h2>
+      <div class="pick-row">
+        <label class="pick">
+          <input type="radio" name="lux1" value="BMW M3">
+          <img src="images/cars/m3.jpg" alt="BMW M3">
+          <span>BMW M3<br>$180/day</span>
+        </label>
+        <label class="pick">
+          <input type="radio" name="lux2" value="Mercedes C-Class">
+          <img src="images/cars/cclass.jpg" alt="Mercedes C-Class">
+          <span>Mercedes C-Class<br>$140/day</span>
+        </label>
+        <label class="pick">
+          <input type="radio" name="lux3" value="Subaru WRX">
+          <img src="images/cars/wrx.jpg" alt="Subaru WRX">
+          <span>Subaru WRX<br>$160/day</span>
+        </label>
+      </div>
 
       <p>Extras</p>
       <label class="check">
