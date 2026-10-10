@@ -254,4 +254,30 @@ a.card:hover {
   line-height: 1.7;
 }
 
+.book-form label {
+  display: block;
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+.book-form input,
+.book-form select {
+  display: block;
+  margin-top: 0.25rem;
+  padding: 0.4rem;
+  width: 100%;
+  max-width: 320px;
+  border: 2px solid var(--ink);
+  border-radius: 6px;
+  font: inherit;
+}
+
+.book-form .check input {
+  display: inline;
+  width: auto;
+  margin-right: 0.35rem;
+}
+
+.book-form button { margin-top: 1rem; font: inherit; }
+
 .site-footer p + p { margin-top: 0.5rem; }

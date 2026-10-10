@@ -21,7 +21,39 @@
     </nav>
   </header>
 
-  <main></main>
+  <main>
+    <h1>Book</h1>
+    <p>Fill this in and send a request. We'll reply by email.</p>
+
+    <form class="book-form" action="book.html">
+      <label>Name
+        <input type="text" name="name">
+      </label>
+      <label>Email
+        <input type="email" name="email">
+      </label>
+      <label>Pick up date
+        <input type="date" name="pickup">
+      </label>
+      <label>Drop off date
+        <input type="text" name="dropoff" placeholder="type a date">
+      </label>
+      <label>Vehicle
+        <select name="vehicle">
+          <option>Small car — $45/day</option>
+          <option>Van or ute — $85/day</option>
+        </select>
+      </label>
+
+      <p>Extras</p>
+      <label class="check">
+        <input type="checkbox" name="rack"> Roof rack — $10/day
+      </label>
+      <p>Child seat — $8/day</p>
+
+      <button class="btn btn-primary" type="submit">Send request</button>
+    </form>
+  </main>
 
   <footer class="site-footer">
     <p>&copy; 2026 RentCar</p>
